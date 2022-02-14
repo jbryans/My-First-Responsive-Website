@@ -1,0 +1,106 @@
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "header"
+        "main1"
+        "main2"
+        "main3"
+    ;
+    height:1000px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+    }
+
+    top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: header;
+        background-color: #0E3B43;
+        color: #A98743;
+        font-size: 30pt;
+    }
+    .main1,.main2,.main3{
+        font-size: 20pt;
+        display: flex;
+        align-items: baseline;
+        
+    }
+    p{
+        font-size: 10pt;
+        font-style: italic;
+        color: #E1CDB5;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .main1 {
+        grid-area: main1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #94C595;
+    }
+    .main2{
+        grid-area: main2;
+        background-color: #747C92;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main3{
+        grid-area: main3;
+        background-color: #372772;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section {
+        color: white;
+    }
+@media (min-width: 999px) {
+    body{
+        display: grid;
+        grid-template-columns: 33% 33% auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "header header header"
+        "main1 main2 main3"
+        ;
+        height: 800px;
+        width:1000px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: auto;
+        }
+    
+        top {
+            grid-area: header;
+            background-color: #0E3B43;
+            color: #A98743;
+            font-size: 50pt;
+        }
+        .main1 {
+            grid-area: main1;
+            background-color: #94C595;
+        }
+        .main2{
+            grid-area: main2;
+            background-color: #747C92;
+        }
+        .main3{
+            grid-area: main3;
+            background-color: #372772;
+        }
+        section {
+            color: white;
+        }
+
+
+}
+
